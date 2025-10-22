@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AspHAtl 9: Rejends - Langganan</title>
+    <link rel="stylesheet" href="tampilan/langganan.css" />
+  </head>
+  <body>
+    <header>
+      <h1>AspHAtl 9: Rejends - Langganan</h1>
+    </header>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="produk.html">Produk</a>
+      <a href="berita.html">Berita</a>
+      <a href="acara.html">Acara</a>
+      <a href="langganan.html">Langganan</a>
+    </nav>
+    <center>
+      <h1>LANGGANAN</h1>
+    </center>
+    <div class="container">
+      <form id="subscription-form" action="#" method="post">
+        <input type="text" id="fullname" name="fullname" placeholder="Nama Lengkap" />
+        <div id="fullname-error" class="error-message"></div>
+        <input type="email" id="email" name="email" placeholder="Email" />
+        <div id="email-error" class="error-message"></div>
+        <input type="date" id="birthdate" name="birthdate" />
+        <div id="birthdate-error" class="error-message"></div>
+        <select id="gender" name="gender">
+          <option value="">Pilih Jenis Kelamin</option>
+          <option value="male">Laki-laki</option>
+          <option value="female">Perempuan</option>
+        </select>
+        <div id="gender-error" class="error-message"></div>
+        <input type="checkbox" id="terms" name="terms" />
+        <label for="terms">Saya menyetujui Syarat dan Ketentuan</label>
+        <div id="terms-error" class="error-message"></div>
+        <input type="submit" value="Langganan" />
+        <div id="success-message"></div>
+      </form>
+    </div>
+    <footer>&copy; 2024 AspHAtl 9: Rejends. All rights reserved.</footer>
+
+    <script src="logic/javascript.js"></script>
+  </body>
+</html>
