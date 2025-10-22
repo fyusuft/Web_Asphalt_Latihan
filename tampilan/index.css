@@ -1,0 +1,103 @@
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #222;
+        color: #fff;
+      }
+      header {
+        background: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        background: #444;
+      }
+      nav a {
+        color: #fff;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+      nav a:hover {
+        background: #555;
+      }
+      .hero {
+        position: relative;
+        background: url("../gambar/bg.jpg") no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 3em;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      .hero .button-container {
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .hero .button-container a {
+        background: #ff5733;
+        color: white;
+        padding: 14px 28px;
+        text-decoration: none;
+        font-size: 1.2em;
+        border-radius: 5px;
+      }
+      .hero .button-container a:hover {
+        background: #ff2e00;
+      }
+      .container {
+        padding: 20px;
+      }
+      .info {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .info img {
+        width: 40%;
+        margin-right: 20px;
+      }
+      .info div {
+        width: 60%;
+      }
+      footer {
+        background: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2em;
+        }
+        nav {
+          flex-direction: column;
+        }
+        .hero .button-container a {
+          font-size: 1em;
+          padding: 10px 20px;
+        }
+        .info {
+          flex-direction: column;
+        }
+        .info img {
+          width: 100%;
+          margin: 0 0 20px 0;
+        }
+        .info div {
+          width: 100%;
+        }
+      }
